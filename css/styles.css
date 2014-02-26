@@ -1,7 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Carter+One);
+
 body
 {
     background-image:url(img/bkg.jpg);
     background-position:center;
     background-attachment:fixed;
-    background-size:100%;
+    background-size:cover;
 }
+
+.container
+{
+    margin:auto;
+    margin-top:12%;
+
+}
+
+.namespace
+{
+    font-weight:400;
+    font-size:600%;
+    text-align:center;
+    
+    font-family: 'Carter One', cursive;
+    
+    color:#fff;
+    text-shadow:0 3px 3px rgba(0,0,0,0.4);
+    z-index:5;
+}
+
+    .subname
+    {
+        position:relative;
+        left:13%;
+        margin-top:-4%;
+    
+        text-shadow:0 2px 2px rgba(0,0,0,0.6);
+        z-index:6;
+    
+        font-size:25%;
+        transform:rotate(-10deg);
+        -ms-transform:rotate(-10deg);
+        -webkit-transform:rotate(-10deg);
+    }
