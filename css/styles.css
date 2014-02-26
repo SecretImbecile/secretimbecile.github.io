@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Carter+One);
-@import url(http://fonts.googleapis.com/css?family=Roboto:100, 300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100, 400);
 
 body
 {
@@ -51,8 +51,8 @@ body
 
 .Navigation
 {
-    margin-left:15%;
-    margin-right:15%;
+    max-width:1200px;
+    margin:auto;
     padding:16px;
     
     text-align:center;
@@ -65,24 +65,26 @@ body
     font-family: 'Roboto', sans-serif;
     
     background:rgba(0,0,0,0.25);
-    margin-top:10%;
+    border-radius:5px;
+    margin-top:8%;
 }
 
 .Bio
 {
-    margin-left:25%;
-    margin-right:25%;
+    max-width:1000px;
+    margin:auto;
+    
     padding-top:4px;
     padding-bottom:4px;
     padding-left:32px;
     padding-right:32px;
     
     background:rgba(0,0,0,0.25);
-    border-radius:15px;
-    margin-top:10%;
+    border-radius:5px;
+    margin-top:8%;
     
     text-align:justify;
-    font-weight:300;
+    font-weight:400;
     color:#fff;
     font-size:20px;
     font-family: 'Roboto', sans-serif;
