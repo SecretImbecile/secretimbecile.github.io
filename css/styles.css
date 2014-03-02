@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Carter+One);
-@import url(http://fonts.googleapis.com/css?family=Exo+2:100,400);
+@import url(http://fonts.googleapis.com/css?family=Exo+2:100,200);
 
 body
 {
@@ -13,6 +13,12 @@ body
     max-width:100%;
 }
 
+a
+{
+    color:#c5e0ff;
+    text-decoration:none;
+}
+
 .container
 {
     max-width:70%;
@@ -23,7 +29,7 @@ body
 
 .namespace
 {
-    font-weight:400;
+    font-weight:200;
     font-size:180px;
     text-align:center;
     
@@ -78,7 +84,7 @@ body
     margin:32px;
     
     text-align:justify;
-    font-weight:400;
+    font-weight:200;
     color:#fff;
     font-size:20px;
     font-family: 'Exo 2', sans-serif;
