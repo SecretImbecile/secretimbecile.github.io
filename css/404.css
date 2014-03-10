@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Lilita+One);
+
+body
+{
+    background:#94b1a9;
+    background-image:url(img/bkg.jpg);
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    margin-top:15%;   
+    max-width:100%;
+
+	font-family:'Lilita One', cursive;
+	font-weight:400;
+	font-size:400%;
+	text-align:center;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+a
+{
+	font-family:'Lilita One', cursive;
+	font-weight:400;
+	font-size:800%;
+	text-align:center;
+	color:#ffffff;
+	text-decoration:none;
+}
