@@ -38,7 +38,7 @@
 $('body').flowtype({
    minimum   : 480,
    maximum   : 1920,
-   minFont   : 12,
+   minFont   : 16,
    maxFont   : 72,
    fontRatio : 30
 });
