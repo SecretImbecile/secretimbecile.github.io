@@ -1,91 +1,85 @@
-@import url(http://fonts.googleapis.com/css?family=Carter+One);
-@import url(http://fonts.googleapis.com/css?family=Exo+2:100,200);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,500,700,900);
 
 body
 {
-    background:#94b1a9;
-    
-    background-image:url(img/bkg.jpg);
-    background-position:center;
-    background-attachment:fixed;
-    background-size:cover;
-    
-    max-width:100%;
+	background-color:#e6e6e6;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size:large;
+	
+	padding:1%;
 }
 
 a
 {
-    color:#c5e0ff;
-    text-decoration:none;
+	text-decoration:none;
+	color:#808080;
 }
 
-.container
+a:hover
 {
-    max-width:70%;
-    margin:auto;
-    margin-top:10%;
-
+	color:#000;
 }
 
-.namespace
+.sitebkg
 {
-    font-weight:200;
-    font-size:180px;
-    text-align:center;
-    
-    font-family: 'Carter One', cursive;
-    
-    color:#fff;
-    text-shadow:0 3px 3px rgba(0,0,0,0.4);
-    z-index:5;
+	background-color:#ffffff;
+	box-shadow: 0 0 20px #dcdcdc;
+	
+	max-width:1280px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	padding:120px;
+	padding-top:60px;
 }
 
-    .subname
-    {
-        position:relative;
-        left:200px;
-        margin-top:-80px;
-    
-        color:rgb(179,255,0);
-        text-shadow:0 2px 2px rgba(0,0,0,0.6);
-        z-index:6;
-    
-        font-size:25%;
-        transform:rotate(-10deg);
-        -ms-transform:rotate(-10deg);
-        -webkit-transform:rotate(-10deg);
-    }
-
-.Content
+.item
 {
-    max-width:1200px;
-    margin:auto;
-    padding:16px;
-    
-    background:rgba(0,0,0,0.25);
-    border-radius:5px;
-    margin-top:8%;
+	padding-top: 40px;
+	margin-top:40px;
+	border-top: 15px solid rgba(1, 1, 1, 0.04);
 }
 
-.Navigation
-{    
-    text-align:center;
-    font-weight:100;
-    letter-spacing:-1px;
-    word-spacing:10px;
-    
-    color:#fff;
-    font-size:28px;
-    font-family: 'Exo 2', sans-serif;
-}
-
-.Bio
+.header1
 {
-    margin:32px;
-    
-    text-align:justify;
-    font-weight:200;
-    color:#fff;
-    font-size:20px;
-    font-family: 'Exo 2', sans-serif;
+	Text-Align:center;
+	font-size:96px;
+	font-weight:700;
+	
+	max-width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	margin-bottom:80px;
 }
+.header2
+{
+	font-size:48px;
+	color:#808080;
+	font-weight:500;
+}
+
+.navbar
+{
+	font-size:36px;
+	text-align:center;
+}
+
+.pic
+{
+	width:256px;
+	height:256px;
+	background:url(me.jpg);
+	border-radius:128px;
+	
+	float:left;
+}
+
+.bio
+{
+	font-size:x-large;
+	margin-left:10%;
+	margin-right:10%;
+}
+
