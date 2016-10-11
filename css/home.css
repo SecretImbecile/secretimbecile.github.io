@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+
+/* Background */
+
+.background-home
+{
+	position: fixed;
+	left: -10%;
+	top: -10%;
+	z-index: -1;
+
+	background-image: url(bkg_jam.jpg);
+	background-size:cover;
+	height: 120%;
+	width: 120%;
+	-webkit-filter: contrast(0.8) brightness(1.2) blur(64px);
+	filter: contrast(0.8) brightness(1.2) blur(64px);
+}
+
+.contactbar
+{
+	margin-top: 64px;
+	text-align: center;
+}
