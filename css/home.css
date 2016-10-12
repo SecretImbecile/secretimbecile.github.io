@@ -18,3 +18,11 @@ body
   	vertical-align: middle;
   	line-height: normal;
 }
+
+@media (max-width: 800px)
+{
+	.contactitem
+	{
+		font-size: 12pt;
+	}
+}

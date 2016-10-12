@@ -13,7 +13,7 @@ h1
 {
 	Text-Align:center;
 	text-transform: uppercase;
-	font-size:64pt;
+	font-size:72pt;
 	font-weight:500;
 	margin:0px;
 }
@@ -26,6 +26,22 @@ h2
 	margin:0px;
 }
 
+@media (max-width: 800px)
+{
+	h1
+	{
+		font-size:12vw;
+	}
+	h2
+	{
+		font-size:5vw;
+	}
+	body
+	{
+		font-size: medium;
+	}
+}
+
 .content
 {
 	width:90%;
@@ -33,7 +49,7 @@ h2
 	max-width:768px;
 	padding: 32pt;
 
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 8px;
 	box-shadow: 0 0 32px #999;
 	position: absolute;
