@@ -33,7 +33,8 @@ h2
 	max-width:768px;
 	padding: 32pt;
 
-	background-color:#FFF;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 8px;
 	box-shadow: 0 0 32px #999;
 	position: absolute;
 	left:50%;
