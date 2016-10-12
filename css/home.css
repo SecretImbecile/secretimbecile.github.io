@@ -2,23 +2,15 @@
 
 /* Background */
 
-.background-home
+body
 {
-	position: fixed;
-	left: -10%;
-	top: -10%;
-	z-index: -1;
-
 	background-image: url(bkg_jam.jpg);
 	background-size:cover;
-	height: 120%;
-	width: 120%;
-	-webkit-filter: contrast(0.8) brightness(1.2) blur(64px);
-	filter: contrast(0.8) brightness(1.2) blur(64px);
+	background-attachment: fixed;
 }
 
 .contactbar
 {
-	margin-top: 64px;
+	margin-top: 48px;
 	text-align: center;
 }

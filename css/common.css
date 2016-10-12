@@ -9,34 +9,11 @@ body
 	font-size:large;
 }
 
-.page
-{
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	z-index: 100;
-}
-
-.content
-{
-	background-color:#FFF;
-	box-shadow: 0 0 32px #999;
-
-	width:80%;
-	max-width:1024px;
-	padding: 5%;
-
-	position: absolute;
-	margin-top: 10%;
-	left:50%;
-	transform: translate(-50%, 0);
-}
-
 h1
 {
 	Text-Align:center;
 	text-transform: uppercase;
-	font-size:72px;
+	font-size:64pt;
 	font-weight:500;
 	margin:0px;
 }
@@ -44,6 +21,44 @@ h1
 h2
 {
 	font-weight:100;
-	font-size:48px;
+	font-size:32pt;
 	color:#999;
+	margin:0px;
+}
+
+.content
+{
+	width:80%;
+	min-width:256px;
+	max-width:768px;
+	padding: 32pt;
+
+	background-color:#FFF;
+	box-shadow: 0 0 32px #999;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%, 0);
+
+	margin-top:30vh;
+}
+
+@media (max-height: 1024px)
+{
+	.content
+	{
+		margin-top:20vh;
+	}
+}
+
+@media (max-height: 850px)
+{
+	.content
+	{
+		margin-top:12pt;
+	}
+}
+
+a
+{
+	text-decoration: none;
 }
