@@ -9,8 +9,12 @@ body
 	background-attachment: fixed;
 }
 
-.contactbar
+.contactitem
 {
-	margin-top: 48px;
-	text-align: center;
+	margin:8pt;
+	margin-left:24pt;
+	font-size: 16pt;
+	display: inline-block;
+  	vertical-align: middle;
+  	line-height: normal;
 }
