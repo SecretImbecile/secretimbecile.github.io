@@ -1,0 +1,61 @@
+/*	Backgrounds	*/
+
+.solitudebkg
+{
+	background-image: url(bkg_project1.jpg);
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 10vw;
+	padding-right:10vw;
+}
+
+.jambkg
+{
+	background-image: url(bkg_jam.jpg);
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
+
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 10vw;
+	padding-right:10vw;
+}
+
+/*	Images	*/
+
+.imgcontainer
+{
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 2px;
+	margin: 2px;
+	padding: 2px;
+
+	display: inline-block;
+	vertical-align: top;
+
+	width: 15vw;
+	font-size: small;
+	text-align: center;
+	color: #DDD;
+}
+img
+{
+	width: 100%;
+}
+
+/*	Alternate Image Layout	*/
+
+@media (max-width: 960px)
+{
+	.imgcontainer
+	{
+		width: 30vw;
+	}
+}
