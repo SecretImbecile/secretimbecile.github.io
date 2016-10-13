@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 
-/*	(PC Default) Large Format Devices*/
+/*	(PC Default) Large Format Devices	*/
 
 h1
 {
@@ -8,7 +8,7 @@ h1
 	text-transform: uppercase;
 	font-size:64pt;
 	font-weight:500;
-	margin:0px;
+	margin:0;
 }
 
 h2
@@ -16,7 +16,15 @@ h2
 	font-weight:100;
 	font-size:32pt;
 	color:#999;
-	margin:0px;
+	margin:0;
+}
+
+h3
+{
+	font-weight:100;
+	font-size:24pt;
+	color:#AAA;
+	margin:0;
 }
 
 body
@@ -24,28 +32,9 @@ body
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size:large;
-
-	margin-left: 30vw;
-	margin-right: 30vw;
-	margin-top: 20vh;
-	margin-bottom: 20vh;
-}
-
-.content
-{
-	margin:0;
-	padding: 32pt;
-	width: 100%;
+	
+	margin: 0;
 	min-width: 256px;
-	max-width: 100%;
-
-	background-color: rgba(255, 255, 255, 0.9);
-	box-shadow: 0 0 32px #999;
-	border-radius: 0;
-
-	-webkit-box-sizing: border-box;
-   	-moz-box-sizing: border-box;
-   	box-sizing: border-box;
 }
 
 a
@@ -53,24 +42,10 @@ a
 	text-decoration: none;
 }
 
-/*bugfix*/
-@media (min-width: 561px)
-{
-	.content
-	{
-		border-radius: 8px;
-	}
-}
-
 /*	Medium Format Devices (Tablet)	*/
 
-@media (max-width:1440px)
+@media (max-width:1024px)
 {
-	body
-	{
-		margin-left: 20vw;
-		margin-right: 20vw;
-	}
 	h1
 	{
 		font-size: 48pt;
@@ -78,6 +53,10 @@ a
 	h2
 	{
 		font-size: 24pt;
+	}
+	h3
+	{
+		font-size: 18pt;
 	}
 }
 
@@ -87,10 +66,6 @@ a
 {
 	body
 	{
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 15vw;
-		margin-bottom: 15vw;
 		font-size: medium;
 	}
 	h1
@@ -101,15 +76,18 @@ a
 	{
 		font-size:5vw;
 	}
+	h3
+	{
+		font-size:4vw;
+	}
 }
 
 /*	Very Small Format Devices (iPhone4)	*/
 
-@media (max-height: 600px)
+@media (max-height: 540px)
 {
 	body
 	{
-		margin-top: 12pt;
-		margin-bottom: 12pt;
+		font-size: small;
 	}
 }

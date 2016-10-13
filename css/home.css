@@ -1,12 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
 
-/* Background */
+/*	(PC Default) Large Format Devices*/
 
 body
 {
 	background-image: url(bkg_jam.jpg);
 	background-size:cover;
+	background-position: center;
 	background-attachment: fixed;
+
+	margin-left: 25vw;
+	margin-right: 25vw;
+	margin-top: 30vh;
+	margin-bottom: 64pt;
 }
 
 .contactitem
@@ -19,10 +25,96 @@ body
   	line-height: normal;
 }
 
-@media (max-width: 800px)
+.content
 {
+	margin:0;
+	padding: 32pt;
+	width: 100%;
+	min-width: 256px;
+	max-width: 100%;
+
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 32px rgba(0,0,0,0.5);
+	border-radius: 0;
+
+	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+   	box-sizing: border-box;
+}
+
+@media (min-width: 561px)
+{
+	.content
+	{
+		border-radius: 8px;
+	}
+}
+
+@media (max-height: 1280px)
+{
+	body
+	{
+		margin-top:25vh;
+	}
+}
+
+/*	Medium Format Devices (Tablet)	*/
+
+@media (max-width:1024px)
+{
+	body
+	{
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+}
+@media (max-width:1440px)
+{
+	body
+	{
+		margin-left: 20vw;
+		margin-right: 20vw;
+	}
+}
+@media (max-height:960px)
+{
+	body
+	{
+		margin-top:15vh;
+		margin-bottom:32pt;
+	}
+}
+
+/*	Small Format Devices (Phones)	*/
+
+@media (max-height:640px)
+{
+	body
+	{
+		margin-top: 10vh;
+		margin-bottom: 12pt;
+	}
+}
+@media (max-width: 560px)
+{
+	body
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.contactitem
 	{
-		font-size: 12pt;
+		font-size: medium;
+	}
+}
+@media (max-height:480px)
+{
+	body
+	{
+		font-size: small;
+	}
+	.contactitem
+	{
+		font-size: small;
 	}
 }
