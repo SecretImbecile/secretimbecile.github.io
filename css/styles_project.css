@@ -54,8 +54,18 @@ img
 
 @media (max-width: 960px)
 {
+	.solitudebkg
+	{
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+	.jambkg
+	{
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
 	.imgcontainer
 	{
-		width: 30vw;
+		width: 35vw;
 	}
 }
