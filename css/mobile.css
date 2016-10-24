@@ -47,7 +47,7 @@
         body {
                 font-size:14pt;
         }
-        #content>header {
+        header {
                 font-size: 11vw;
         }
         #content {
@@ -86,7 +86,7 @@
             border: none;
             padding-bottom: 2px;
         }
-        #content>header {
+        header {
             font-size: 2.25em;
         }
 }
