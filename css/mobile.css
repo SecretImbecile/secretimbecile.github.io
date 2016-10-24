@@ -64,6 +64,7 @@
         /*Navbar*/
         nav
         {
+                display: flex;
                 position:static;
                 min-height:32px;
                 height:auto;
