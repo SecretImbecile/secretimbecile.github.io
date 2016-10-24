@@ -1,71 +1,39 @@
 /*	Backgrounds	*/
 
-.solitudebkg
-{
-	background-image: url(bkg_project1.jpg);
-	background-size:cover;
-	background-position: center;
-	background-attachment: fixed;
-	text-align: center;
-
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-	padding-left: 10vw;
-	padding-right:10vw;
+h3{
+	margin-bottom: 0;
+}
+h4{
+	margin: 0;
+	color: #999;
+	font-weight: 300;
 }
 
-.jambkg
-{
-	background-image: url(bkg_jam.jpg);
-	background-size:cover;
-	background-position: center;
-	background-attachment: fixed;
-	text-align: center;
-
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-	padding-left: 10vw;
-	padding-right:10vw;
+.imgcontainer {
+	width:46%;
+	float:left;
+	height:auto;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 4px;
+	margin:4px 8px;
+	padding:2px;
 }
-
-/*	Images	*/
-
-.imgcontainer
-{
-	background-color: rgba(0,0,0,0.25);
-	border-radius: 2px;
-	margin: 2px;
-	padding: 2px;
-
-	display: inline-block;
-	vertical-align: top;
-
-	width: 15vw;
-	font-size: small;
-	text-align: center;
-	color: #DDD;
+.imgcontainerb {
+	float:left;
+	width:30%;
+	height:auto;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 4px;
+	margin:4px 8px;
+	padding:2px;
 }
-img
-{
+.imgcontainer>img, .imgcontainerb>img {
 	width: 100%;
+	border-radius: 4px;
 }
-
-/*	Alternate Image Layout	*/
-
-@media (max-width: 960px)
-{
-	.solitudebkg
-	{
-		padding-left: 5vw;
-		padding-right: 5vw;
-	}
-	.jambkg
-	{
-		padding-left: 5vw;
-		padding-right: 5vw;
-	}
-	.imgcontainer
-	{
-		width: 35vw;
-	}
+.imgcontainer>div, .imgcontainerb>div {
+	width:90%;
+	margin: auto;
+	font-size: 0.8em;
+	color:#000;
 }

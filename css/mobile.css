@@ -1,0 +1,92 @@
+/*      MDPi PC     */
+@media (max-width:2000px)
+{
+        #content {
+                width: 800px;
+        }
+        #content>header, #content>article, .nonarticle {
+                margin: 0 100px;
+        }
+}
+
+/*      LDPi PC     */
+@media (max-width:1440px)
+{
+        #content {
+                width: 700px;
+        }
+        #content>header, #content>article, .nonarticle {
+                margin: 0 60px;
+        }
+}
+
+/*      Tablet Large     */
+@media (max-width:1024px)
+{
+        body {
+                background-image:none;
+                background-color:#eee;
+        }
+        #content {
+                width: 650px;
+        }
+        #content>header, #content>article, .nonarticle {
+                margin: 0 40px;
+        }
+}
+@media (max-width:720px)
+{
+        #content {
+                width: 550px;
+        }
+}
+
+/*      Phone       */
+@media only screen and (max-width: 600px)
+{
+        body {
+                font-size:14pt;
+        }
+        #content>header {
+                font-size: 11vw;
+        }
+        #content {
+                margin-top: 0;
+                width: 95%;
+        }
+        #content>header, #content>article, .nonarticle {
+                margin: 0 8px;
+        }
+        article>p{
+                text-align: left;
+        }
+
+        /*Navbar*/
+        nav
+        {
+                position:static;
+                min-height:32px;
+                height:auto;
+        }
+        #nav-holder {
+                height:auto;
+                max-width: 100%;
+        }
+}
+
+/*      Very Small (<=iPhone4)  */
+@media only screen and (max-width: 320px)
+{
+        body {
+            background-color: #fff;
+            font-size: 12pt;
+        }
+        #content {
+            width: 100%;
+            border: none;
+            padding-bottom: 2px;
+        }
+        #content>header {
+            font-size: 2.25em;
+        }
+}

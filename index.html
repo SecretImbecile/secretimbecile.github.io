@@ -2,29 +2,38 @@
 <html lang="en">
         <head>
                 <title>Jack Kelly</title>
-                <link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+                <meta name="description" content="Computer Science graduate, organiser of Manchester Raspberry Jam." />
+                <link rel='shortcut icon' type='image/x-icon' href='icon_32.png' />
+                <link rel="icon" sizes="192x192" href="icon_192.png">
+                <link rel="icon" sizes="128x128" href="icon_128.png">
                 <link rel="stylesheet" type="text/css" href="css/styles.css" />
-                <link rel="stylesheet" type="text/css" href="css/home.css" />
+                <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="theme-color" content="#555555">
+                <meta name="apple-mobile-web-app-status-bar-style" content="#555555">
         </head>
 
         <body>
-                <div class="content">
-                        <article class="profile" itemscope itemtype="http://schema.org/Person">
-                                <h1><span itemprop="givenName">Jack</span>&nbsp; <span itemprop="familyName">Kelly</span></h1>
-                                <ul class="navbar">
-                                        <li class="navbaritem"><a href="#">Home</a></li>
-                                        <li class="navbaritem"><a href="projects.html">Projects</a></li>
-                                        <li class="navbaritem"><a href="http://mcrraspjam.org.uk/" target="_blank">Manchester Raspberry Jam</a></li>
+                <nav>
+                        <div id="nav-holder">
+                                <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                        <li><a href="http://mcrraspjam.org.uk/" target="_blank">Manchester Raspberry Jam</a></li>
                                 </ul>
+                        <div id="navbreak" />
+                </nav>
+
+                <div id="content">
+                        <header>
+                                <span itemprop="givenName">Jack</span>&nbsp; <span itemprop="familyName">Kelly</span>
+                        </header>
+                        <article class="profile" itemscope itemtype="http://schema.org/Person">
                                 <h2>About Me</h2>
-                                <p style="text-align:justify">
+                                <p>
                                         I'm <span itemprop="description">a Computer Science <span itemprop="jobTitle">graduate</span> from <span itemscope itemprop="birthPlace homeLocation" itemtype="https://schema.org/City">Manchester</span></span>.
                                         I currently organise <span itemprop="memberOf" itemscope itemtype="https://schema.org/EducationalOrganization"> <a href="http://mcrraspjam.org.uk/" itemprop="url"><span itemprop="name">Manchester Raspberry Jam</span></a>,
-                                        <span itemprop="description"> a <span itemprop="Brand">Raspberry Pi</span> community event</span>, where we hope to share the excitement of computer programming with children and people of all ages.</span>
-                                </p>
-                                <p style="text-align:justify">
-                                        <!-- You can see some of the things I get up to in my spare time on my projects page. -->
+                                        <span itemprop="description"> a <span itemprop="Brand">Raspberry Pi</span> community event</span> where we hope to share the excitement of computer programming with children and people of all ages.</span>
                                 </p>
                                 <h2>Contact</h2>
                                 <p class="contactitem">
@@ -37,6 +46,7 @@
                                         <a href="http://github.com/McrRaspJam" target="_blank" itemprop="url"><img src="css/icon_gith.png" alt="github icon"/> McrRaspJam</a>
                                 </p>
                         </article>
+
                 </div>
         </body>
 </html>
