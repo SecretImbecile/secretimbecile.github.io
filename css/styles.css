@@ -94,12 +94,22 @@ article>p{
 	text-align: justify;
 }
 
+article>img{
+        width:100%;
+        height: auto;
+        border-radius: 4px;
+}
+
 /* Homepage only */
 
-.contactitem
-{
-        margin: auto 16px;
-	display: inline-block;
+.contactitem {
+        text-indent: 1vw;
+        /*
+        display: inline-block;
   	vertical-align: middle;
   	line-height: normal;
+        */
+}
+.contactitem>a>i {
+        font-size: 1.5em;
 }
