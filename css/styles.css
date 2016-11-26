@@ -3,7 +3,7 @@
 body {
     margin: 0;
     background-color: #eee;
-    background: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/bkg_jam.jpg) center fixed;
+    /*background: url(http://mcrraspjam.org.uk/wp-content/uploads/2016/10/bkg_jam.jpg) center fixed;*/
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
@@ -25,7 +25,7 @@ h4 {font-size: 1.1em;}
 
 /* Navbar */
 nav {
-	background-color: #555;
+	background-color: #0080ff;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
         position: fixed;
         top: 0;
@@ -52,7 +52,7 @@ nav {
 	font-size: 14pt;
 }
 #nav-holder>ul>li:hover {
-	background-color: #625862;
+	background-color: #0060BF;
 }
 #nav-holder>#navbreak {
 	clear:both;
