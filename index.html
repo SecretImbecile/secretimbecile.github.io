@@ -10,51 +10,38 @@
                 <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta name="theme-color" content="#0080ff">
-                <meta name="apple-mobile-web-app-status-bar-style" content="#555555">
-                <script src="https://use.fontawesome.com/44747385a2.js"></script>
+                <meta name="apple-mobile-web-app-status-bar-style" content="#0080ff">
         </head>
-
         <body>
-                <nav>
-                        <div id="nav-holder">
-                                <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="http://mcrraspjam.org.uk/" target="_blank">Manchester Raspberry Jam &nbsp;&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-                                </ul>
+                <header><a href="index.html">Jack Kelly</a></header>
+                <article id="bio">
+                        I'm a Computer Science graduate based in Manchester.
+                        I currently spend my spare time organising Manchester Raspberry Jam.
+                </article>
+                <hr />
+                <article class="flexcontent">
+                        <div class="flexitem" id="homeitem1">
+                                <a href="#">
+                                        <img src="img/home_project.jpg" alt=""/>
+                                        <h2>Projects</h2>
+                                </a>
+                                <p>Some of my recent personal projects.</p>
                         </div>
-                        <div id="navbreak"></div>
-                </nav>
-
-                <div id="content">
-                        <header>
-                                Jack&nbsp; Kelly
-                        </header>
-                        <article class="profile" itemscope itemtype="http://schema.org/Person">
-                                <h2>About Me</h2>
-                                        <meta itemprop="givenName" content="Jack" />
-                                        <meta itemprop="familyName" content="Kelly" />
-                                <p>
-                                        I'm <span itemprop="description">a Computer Science <span itemprop="jobTitle">graduate</span> from <span itemprop="birthPlace homeLocation" itemtype="https://schema.org/City">Manchester</span></span>.
-                                        I currently organise <span itemprop="memberOf" itemscope itemtype="https://schema.org/EducationalOrganization"> <a href="http://mcrraspjam.org.uk/" itemprop="url"><span itemprop="name">Manchester Raspberry Jam</span></a>,
-                                        <span itemprop="description"> a <span itemprop="Brand">Raspberry Pi</span> community event</span> where we hope to share the excitement of computer programming with children and people of all ages.</span>
-                                </p>
-                                <!-- <img src="img/me.jpg" alt="Jack hosting a workshop at Manchester Raspberry Jam"/> -->
-                                <h2>Contact</h2>
-                                <p class="contactitem">
-                                        <a href="mailto:jack@jackjkelly.com" itemprop="email"> <i style="color:#cc4a4a" class="fa fa-envelope-square" aria-hidden="true"></i> jack@jackjkelly.com</a>
-                                </p>
-                                <p class="contactitem">
-                                        <a href="http://twitter.com/secretimbecile" target="_blank" itemprop="url"> <i style="color:#55acee" class="fa fa-twitter-square" aria-hidden="true"></i> @SecretImbecile</a>
-                                </p>
-                                <p class="contactitem">
-                                        <a href="http://github.com/SecretImbecile" target="_blank" itemprop="url"> <i style="color:#000" class="fa fa-github-square" aria-hidden="true"></i> SecretImbecile</a>
-                                </p>
-                                <p class="contactitem">
-                                        <a href="http://github.com/McrRaspJam" target="_blank" itemprop="url"> <i style="color:#000" class="fa fa-github-square" aria-hidden="true"></i> McrRaspJam</a>
-                                </p>
-                        </article>
-
-                </div>
+                        <div class="flexitem" id="homeitem2">
+                                <a href="contact.html">
+                                        <img src="img/home_contact.jpg" alt="" />
+                                        <h2>Contact Me</h2>
+                                </a>
+                                <p>Contact me via email, or find me online.</p>
+                        </div>
+                        <div class="flexitem" id="homeitem3">
+                                <a href="http://mcrraspjam.org.uk/" target="_blank">
+                                        <img src="img/home_jam.jpg" alt=""/>
+                                        <h2>Manchester Raspberry Jam</h2>
+                                </a>
+                                <p>Manchester Raspberry Jam is a monthly Raspberry Pi community event based in Manchester. We aim to share the excitement of making and computer programming with children and people of all ages.</p>
+                        </div>
+                </article>
+                <hr />
         </body>
 </html>
