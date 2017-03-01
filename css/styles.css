@@ -106,13 +106,18 @@ main article {
         font-size: 1.2em;
 }
 
-@media only screen and (max-width:924px)
+@media only screen and (max-width:1440px)
 {
         body {
                 width: initial;
                 height: initial;
-        }
 
+                align-items: flex-start;
+        }
+}
+
+@media only screen and (max-width:924px)
+{
         .item {flex-grow: 1; max-width: 480px;}
         .item:nth-of-type(1) {order: 4;}
 }
