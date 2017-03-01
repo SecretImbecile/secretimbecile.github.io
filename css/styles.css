@@ -59,7 +59,8 @@ header p {
 header a:link {color: #0080ff;}
 header a:visited {color: #0080ff;}
 
-main header, main article {
+main header,
+main article {
         max-width: 35em;
         margin: 0 auto;
 }
