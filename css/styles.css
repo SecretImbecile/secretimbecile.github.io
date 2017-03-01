@@ -1,142 +1,121 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
 
-/* Base */
-body{
-        min-width: 300px;
-        margin: 0;
-        margin-top: 5vh;
-
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 300;
+body {
         font-size: 16pt;
-        color:#444444;
-}
-
-h1, h2{font-weight: 400;}
-h1{font-size: 1.4em;}
-h2{font-size: 1.1em;}
-h3{
-        font-size: 1.0em;
+        font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        color:#888;
-}
+        line-height: 1.5;
 
-.contactitem{
-        font-size: 1.3em;
-}
-
-/* Header */
-header, a{
-        color: #0080ff;
-        text-decoration: none;
-}
-
-header{
-        width: 100%;
-        text-align: center;
-        word-spacing: 0.4em;
-
-        font-size: 400%;
-        font-weight: 600;
-        text-shadow: 2px 2px rgba(0,0,0,0.25)
-}
-
-/* Page Content */
-article{
-        text-align: justify;
-        max-width: 100%;
-        width: 32em;
-        margin: auto;
-}
-
-hr{
-        max-width: 90%;
-        width: 32em;
-        margin:auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
-
-        border: 0;
-        border-bottom: 1px solid rgba(85, 85, 85, 0.1);
-}
-
-#bio{
-        height: 3em;
-        line-height: 150%;
-}
-#bio>h1{
+        width: 100vw;
+        height: 100vh;
         margin: 0;
-        padding-top: 0.5em;
-        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
 }
 
+h1 {
+        color: #0080ff;
+        font-size: 4em;
+        font-weight: 400;
+        text-align: center;
+        word-spacing: 0.25em;
+        line-height: 1;
+        margin: 14pt auto;
+}
+h2 {font-size: 1.3em; text-align: center;}
+h3 {font-size: 1.1em;}
+h4 {font-size: 1.0em;}
+h2,
+h3,
+h4 {
+        font-weight: 400;
+        line-height: 1;
+        margin: 8pt auto;
+}
 
-/* Flexbox items */
-.flexcontent{
-        width:1280px;
+a {text-decoration: none;}
+a:link {color: #0080ff;}
+
+body>.frame {
+        flex-basis: 0;
+}
+
+body>main {
+        max-width: 90%;
+        flex-basis: 1280px;
+        flex-grow: 0;
+        flex-shrink: 1;
+}
+
+header p {
+        margin: 0 auto;
+        text-align: justify;
+        font-style: normal;
+}
+
+header a:link {color: #0080ff;}
+header a:visited {color: #0080ff;}
+
+main header, main article {
+        max-width: 35em;
+        margin: 0 auto;
+}
+
+#items {
+        font-size: 14pt;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: stretch;
-        align-content: flex-start;
 }
 
-.flexitem{
-        max-width: 480px;
-        flex-basis: 480px;
-        flex-grow: 1;
+.item {
+        flex-basis: 20em;
         flex-shrink: 1;
-        overflow: hidden;
-        margin: 4px;
-
-        border: 1px solid rgba(85, 85, 85, 0.1);
-        border-radius: 8px;
-        color:#444444;
+        padding: 16pt;
+        text-decoration: none;
 }
 
-#homeitem3{max-width: 960px;}
 
-.flexitem>*{
-        margin: 8px;
-}
+.item:nth-of-type(1) {order: 1;}
+.item:nth-child(2) {order: 3;}
+.item:nth-child(3) {order: 5;}
 
-.flexitem>a{
-        margin: 0;
-}
-
-.flexitem>a>img, .flexitem>img{
-        margin: 0;
+.item img {
+        filter: grayscale(0.5) contrast(0.75) brightness(1.25);
         width: 100%;
         height: auto;
 }
 
-.flexitem>h2{
-        margin-top: 0;
-        text-align: center;
-}
-.flexitem>a>h2{
+.item h2 {
         color: #0080ff;
-        margin-top: 0;
-        text-align: center;
 }
 
-/* Project Box */
-.project{
-        overflow: hidden;
-        margin-top:8px;
-        margin-bottom:8px;
-
-        border: 1px solid rgba(85, 85, 85, 0.1);
-        border-radius: 8px;
-        color:#444444;
+.item p {
+        text-align: left;
+        color: black;
 }
 
-.project>h2, .project>h3{
-        text-align: center;
-        margin: 0;
+.contactitem{
+        font-size: 1.2em;
 }
 
-.project>img{
-        justify-content: center;
-        margin: auto;
+@media only screen and (max-width:924px)
+{
+        body {
+                width: initial;
+                height: initial;
+        }
+
+        .item {flex-grow: 1; max-width: 90%;}
+        .item:nth-of-type(1) {order: 4;}
+}
+
+@media only screen and (max-width:540px)
+{
+        body{font-size: 14pt;}
+        h1{font-size: 16vw;}
 }

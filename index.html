@@ -3,45 +3,45 @@
         <head>
                 <title>Jack Kelly</title>
                 <meta name="description" content="Computer Science graduate, organiser of Manchester Raspberry Jam." />
-                <link rel='shortcut icon' type='image/x-icon' href='icon_32.png' />
-                <link rel="icon" sizes="192x192" href="icon_192.png">
-                <link rel="icon" sizes="128x128" href="icon_128.png">
-                <link rel="stylesheet" type="text/css" href="css/styles.css" />
-                <link rel="stylesheet" type="text/css" href="css/mobile.css" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta name="theme-color" content="#0080ff">
                 <meta name="apple-mobile-web-app-status-bar-style" content="#0080ff">
+                <link rel='shortcut icon' type='image/x-icon' href='icon_32.png' />
+                <link rel="icon" sizes`="192x192" href="icon_192.png">
+                <link rel="icon" sizes="128x128" href="icon_128.png">
+                <link rel="stylesheet" type="text/css" href="css/styles.css" />
+                <script src="https://use.fontawesome.com/7d51ff8cde.js"></script>
         </head>
         <body>
-                <header><a href="index.html">Jack Kelly</a></header>
-                <article id="bio">
-                        I'm a Computer Science graduate based in Manchester.
-                        I currently spend my spare time organising Manchester Raspberry Jam.
-                </article>
-                <hr />
-                <article class="flexcontent">
-                        <div class="flexitem" id="homeitem1">
-                                <a href="#">
-                                        <img src="img/home_project.jpg" alt=""/>
+                <div class="frame"></div>
+                <main>
+                        <header itemscope itemtype="https://schema.org/Person">
+                                <h1 itemprop="name">
+                                        <a href="#">
+                                                <span itemprop="givenName">Jack</span>
+                                                <span itemprop="familyName">Kelly</span>
+                                        </a>
+                                </h1>
+                                <p>I'm a Computer Science <span itemprop="jobTitle">graduate</span> based in <span itemprop="homeLocation" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Manchester</span></span>. I currently spend my spare time organising <span itemprop="memberOf" itemscope itemtype="https://schema.org/Organization"><span itemprop="name"><span itemprop="location" itemscope itemtype="https://schema.org/Place"><span itemprop="name">Manchester</span></span> Raspberry Jam</span></span>.</p>
+                        </header>
+                        <nav id="items">
+                                <a class="item" href="#">
+                                        <img src="img/home_project.jpg" alt="">
                                         <h2>Projects</h2>
+                                        <p>Proin magna leo, commodo in sem et, pretium cursus metus. Nam id interdum leo. Morbi at tellus vel libero consequat.</p>
                                 </a>
-                                <p>Some of my recent personal projects.</p>
-                        </div>
-                        <div class="flexitem" id="homeitem2">
-                                <a href="contact.html">
-                                        <img src="img/home_contact.jpg" alt="" />
-                                        <h2>Contact Me</h2>
-                                </a>
-                                <p>Contact me via email, or find me online.</p>
-                        </div>
-                        <div class="flexitem" id="homeitem3">
-                                <a href="http://mcrraspjam.org.uk/" target="_blank">
-                                        <img src="img/home_jam.jpg" alt=""/>
+                                <a class="item" href="http://mcrraspjam.org.uk/" target="_blank">
+                                        <img src="img/home_jam.jpg" alt="">
                                         <h2>Manchester Raspberry Jam</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tincidunt tellus. Interdum et malesuada fames ac ante ipsum primis.</p>
                                 </a>
-                                <p>Manchester Raspberry Jam is a monthly Raspberry Pi community event based in Manchester. We aim to share the excitement of making and computer programming with children and people of all ages.</p>
-                        </div>
-                </article>
-                <hr />
+                                <a class="item" href="contact.html">
+                                        <img src="img/home_contact.jpg" alt="">
+                                        <h2>Contact Me</h2>
+                                        <p>Fusce efficitur ipsum elit, et pellentesque tellus tempus non. Aenean nec ullamcorper nunc. Vestibulum ac hendrerit dolor, id suscipit enim.</p>
+                                </a>
+                        </nav>
+                </main>
+                <div class="frame"></div>
         </body>
 </html>
