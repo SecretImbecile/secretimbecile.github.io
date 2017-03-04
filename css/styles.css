@@ -83,8 +83,8 @@ main article {
 }
 
 
-.item:nth-of-type(1) {order: 1;}
-.item:nth-child(2) {order: 3;}
+.item:nth-of-type(1) {order: 3;}
+.item:nth-child(2) {order: 1;}
 .item:nth-child(3) {order: 5;}
 
 .item img {
@@ -109,7 +109,7 @@ main article {
 @media only screen and (max-width:924px)
 {
         .item {flex-grow: 1; max-width: 480px;}
-        .item:nth-of-type(1) {order: 4;}
+        .item:nth-of-type(2) {order: 4;}
 }
 
 @media only screen and (max-width:540px)
