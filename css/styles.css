@@ -11,7 +11,7 @@ body {
         height: 100vh;
         margin: 0;
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: space-between;
         align-items: center;
         align-content: center;
@@ -45,8 +45,8 @@ body>.frame {
 }
 
 body>main {
-        max-width: 90%;
-        flex-basis: 1280px;
+        max-width: 90vw;
+        flex-basis: auto;
         flex-grow: 0;
         flex-shrink: 1;
 }
@@ -104,16 +104,6 @@ main article {
 
 .contactitem{
         font-size: 1.2em;
-}
-
-@media only screen and (max-width:1440px)
-{
-        body {
-                width: initial;
-                height: initial;
-
-                align-items: flex-start;
-        }
 }
 
 @media only screen and (max-width:924px)
