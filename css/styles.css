@@ -108,7 +108,6 @@ main article {
 
 @media only screen and (max-width:924px)
 {
-        .item {flex-grow: 1; max-width: 480px;}
         .item:nth-of-type(2) {order: 4;}
 }
 
