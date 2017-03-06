@@ -1,71 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400');
 
+/* Page Frame */
+
+html{height: 100%; min-width: 320px;}
 body {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;;
+        align-items: center;
+
         font-size: 16pt;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        line-height: 1.5;
-
-        min-width: 320px;
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
 }
+
+#center {
+        flex-basis: auto;
+        width: 100%;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+}
+
+main {
+        max-width: 90%;
+        flex-basis: auto;
+}
+
+/* Formatting */
 
 h1 {
-        color: #0080ff;
         font-size: 4em;
         font-weight: 400;
-        text-align: center;
-        word-spacing: 0.25em;
-        line-height: 1;
-        margin: 14pt auto;
+        color: #0080ff;
+        text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
 }
-h2 {font-size: 1.3em; text-align: center;}
-h3 {font-size: 1.1em;}
-h4 {font-size: 1.0em;}
-h2,
-h3,
-h4 {
-        font-weight: 400;
-        line-height: 1;
-        margin: 8pt auto;
+h2, h3, h4 {font-weight: 400;}
+h2 {font-size: 1.3em;}
+h3 {font-size: 1.2em;}
+h4 {font-size: 1em;}
+
+main article{
+        max-width: 40em;
+        line-height: 1.5;
+        text-align: justify;
 }
 
 a {text-decoration: none;}
 a:link {color: #0080ff;}
 
-body>.frame {
-        flex-basis: 0;
+main header {
+        max-width: 40em;
+        margin: 1em auto;
 }
 
-body>main {
-        max-width: 95%;
-        flex-basis: auto;
-        flex-grow: 0;
-        flex-shrink: 1;
-}
-
-header h1 {text-shadow: 2px 2px 0 rgba(0,0,0,0.25);}
-
-header p {
-        margin: 0 auto;
-        font-style: normal;
-}
-
-header a:link {color: #0080ff;}
-header a:visited {color: #0080ff;}
-
-main header,
-main article {
-        max-width: 35em;
+main header * {
+        text-align: center;
         margin: 0 auto;
 }
+
+main header a:visited {color: #0080ff;}
+
+/* Page flex items */
 
 #items {
         font-size: 14pt;
@@ -76,12 +75,11 @@ main article {
 }
 
 .item {
-        flex-basis: 20em;
+        flex-basis: 24em;
         flex-shrink: 1;
-        padding: 16pt;
+        margin: 16pt;
         text-decoration: none;
 }
-
 
 .item:nth-of-type(1) {order: 3;}
 .item:nth-child(2) {order: 1;}
@@ -99,20 +97,11 @@ main article {
 
 .item p {
         text-align: left;
-        color: black;
+        color: initial;
 }
 
-.contactitem{
-        font-size: 1.2em;
-}
-
-@media only screen and (max-width:924px)
+@media only screen and (max-width:560px)
 {
-        .item:nth-of-type(2) {order: 4;}
-}
-
-@media only screen and (max-width:540px)
-{
-        body{font-size: 14pt;}
-        h1{font-size: 16vw;}
+        main {max-width: 95%;}
+        h1 {font-size: 15vw;}
 }
