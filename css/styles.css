@@ -40,11 +40,11 @@ h1 {
         text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
 }
 h2, h3, h4 {font-weight: 400;}
-h2 {font-size: 1.3em;}
-h3 {font-size: 1.1em;}
+h2 {font-size: 1.35em;}
+h3 {font-size: 1.2em;}
 h4 {font-size: 1em;}
 
-main article{
+main article, main section{
         max-width: 40em;
         line-height: 1.5;
         text-align: justify;
@@ -82,9 +82,9 @@ main header a:visited {color: #0080ff;}
         text-decoration: none;
 }
 
-.item:nth-of-type(1) {order: 3;}
-.item:nth-child(2) {order: 1;}
-.item:nth-child(3) {order: 5;}
+nav>.item:nth-of-type(1) {order: 3;}
+nav>.item:nth-child(2) {order: 1;}
+nav>.item:nth-child(3) {order: 5;}
 
 .item img {
         filter: grayscale(0.5) contrast(0.75) brightness(1.25);
@@ -99,6 +99,11 @@ main header a:visited {color: #0080ff;}
 .item p {
         text-align: left;
         color: initial;
+}
+
+@media only screen and (max-width:1090px)
+{
+        nav>.item:nth-child(2) {order: 4;}
 }
 
 @media only screen and (max-width:560px)
