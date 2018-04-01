@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400');
+
+body {
+        background-color: #fff;
+
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+
+        grid-template-columns: 25% auto 25%;
+        grid-template-rows: 25% auto 25%;
+
+        font-size: 14pt;
+        line-height: 1.25;
+        font-family: sans-serif;
+        text-align: justify;
+}
+
+main {
+        background-image: url(vis-main.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+
+        display: flex;
+        flex-flow: column nowrap;
+}
+
+main > * {
+        flex: 1 1 10px;
+
+        display: grid;
+        grid-template-columns: auto 50rem auto;
+}
+
+header {
+        grid-template-rows: 2rem 5rem 2rem;
+        flex: 0 1 auto;
+}
+
+header h1 {
+        display: block;
+        margin: 0;
+        width: auto;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        letter-spacing: 0.05em;
+        word-spacing: 0.2em;
+
+        background-image: url(vis-header.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+}
+
+#about {
+        grid-template-rows: auto;
+        flex: 1 0 auto;
+}
+
+#about p {
+        display: block;
+        margin: 0;
+        padding: 1rem 5rem;
+
+        background-image: url(vis-p.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+}
+
+nav {
+        grid-template-rows: 2rem auto 2rem;
+        flex: 0 1 auto;
+}
+
+nav > #nav-links {
+        background-image: url(vis-nav.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+
+        display: block;
+        height: 5rem;
+        line-height: 5rem;
+}
+
+@media only screen and (max-width:2000px) {
+        body {
+                grid-template-columns: 20% auto 20%;
+                grid-template-rows: 20% auto 20%;
+        }
+}
+
+@media only screen and (max-width:1600px) {
+        body {
+                grid-template-columns: 15% auto 15%;
+                grid-template-rows: 15% auto 15%;
+        }
+}
+
+@media only screen and (max-width:1400px) {
+        body {
+                grid-template-columns: 10% auto 10%;
+                grid-template-rows: 10% auto 10%;
+        }
+}
+
+@media only screen and (max-width:1200px) {
+        body {
+                grid-template-columns: 10% auto 10%;
+                grid-template-rows: 10% auto 10%;
+
+                text-align: left;
+        }
+
+        main > * {
+                grid-template-columns: auto 45rem auto;
+        }
+}
+
+@media only screen and (max-width:1000px) {
+        body {
+                grid-template-columns: 5% auto 5%;
+                grid-template-rows: 5% auto 5%;
+        }
+
+        main > * {
+                grid-template-columns: auto 40rem auto;
+        }
+
+        #about p {
+                padding: 1rem 4rem;
+        }
+}
+
+@media only screen and (max-width:800px) {
+        main > * {
+                grid-template-columns: auto 35rem auto;
+        }
+
+        #about p {
+                padding: 1rem 3rem;
+        }
+}
+
+@media only screen and (max-width:700px) {
+        main > * {
+                grid-template-columns: auto 30rem auto;
+        }
+
+        #about p {
+                padding: 1rem 2.5rem;
+        }
+}
+
+@media only screen and (max-width:600px) {
+        main > * {
+                grid-template-columns: auto 25rem auto;
+        }
+
+        header h1 {
+                font-size: 4rem;
+        }
+
+        #about p {
+                padding: 1rem 2rem;
+        }
+}
+
+@media only screen and (max-width:480px) {
+        body {
+                grid-template-columns: 0 auto 0;
+        }
+
+        main > * {
+                grid-template-columns: auto 90vw auto;
+        }
+
+        header h1 {
+                font-size: 14vw;
+        }
+
+        #about p {
+                padding: 1rem 1rem;
+        }
+}
